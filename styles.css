@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'BronicShadow'; /* Choose a name for your font */
-    src: url('https://github.com/MarNami/Sails-and-Spears/blob/main/BronicShadow-axRxE.ttf') format('truetype'); /* Update with the correct path to your font file */
+    src: url('https://raw.githubusercontent.com/MarNami/Sails-and-Spears/main/BronicShadow-axRxE.ttf') format('truetype'); /* Update with the correct path to your font file */
     font-weight: normal;
     font-style: normal;
 }
