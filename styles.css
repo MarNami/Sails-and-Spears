@@ -12,3 +12,43 @@ body {
 h1 {
     font-family: 'BronicShadow', sans-serif; /* Use the custom font for the heading */
 }
+@font-face {
+    font-family: 'RemachineScript';
+    src: url('https://raw.githubusercontent.com/MarNami/Sails-and-Spears/main/RemachineScriptPersonalUseOnly-yZL3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Add styles specific to the header section */
+header {
+    background-color: teal;
+    border-bottom: 5px solid #4CAF50;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'BronicShadow', sans-serif;
+}
+
+/* Add styles specific to the ocean blue section */
+.ocean-section {
+    background-color: #0077be;
+    border: 5px solid #00bfff;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'RemachineScript', sans-serif;
+}
+
+/* Add any additional global styles or overrides */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
