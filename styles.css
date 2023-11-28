@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'BronicShadow'; /* Choose a name for your font */
+    src: url('path/to/your/BronicShadow-axRxE.ttf') format('truetype'); /* Update with the correct path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fallback font if the custom font doesn't load */
+}
+
+h1 {
+    font-family: 'BronicShadow', sans-serif; /* Use the custom font for the heading */
+}
