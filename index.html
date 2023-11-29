@@ -20,9 +20,35 @@
         header h1 {
             font-size: 60px; /* Adjust the font size as needed */
         }
+
+        /* Add styles for the blog post thumbnail link */
+        .blog-thumbnail {
+            position: relative;
+            display: inline-block; /* Display as a block while maintaining inline flow */
+            margin-right: 20px; /* Adjust the right margin to create space between thumbnails */
+            border: 2px solid #00bfff; /* Blue-green border */
+        }
+
+        .blog-thumbnail img {
+            width: 300px; /* Adjust the width of the thumbnail */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .thumbnail-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            color: #fff; /* White text color */
+            padding: 10px;
+            text-align: center;
+            font-size: 16px; /* Adjust the font size as needed */
+        }
     </style>
     <title>Sails and Spears</title>
 </head>
+
 <body>
 
     <header>
@@ -31,25 +57,31 @@
 
     <section class="ocean-section">
         <!-- Content for the ocean blue section goes here -->
-        <p>Learn about sailing, spearfishing and free diving or just vicariously experience misadventures with us!</p>
+        <p>Learn about sailing, spearfishing, and free diving or just vicariously experience misadventures with us!</p>
     </section>
 
-    <!-- Blog post thumbnail link -->
-    <a href="blog-post.html" class="blog-thumbnail">
-        <!-- Use the "Raw" URL for the image -->
-        <img src="https://raw.githubusercontent.com/MarNami/Sails-and-Spears/main/IMG_5554.jpeg" alt="Blog Post Thumbnail">
-        <div class="thumbnail-title">A Long Journey to Finding the Right Boat!</div>
-    </a>
-  <!-- Second Blog post thumbnail link -->
+    <!-- First Blog post thumbnail link -->
+    <div class="blog-thumbnail">
+        <a href="blog-post.html">
+            <!-- Use the "Raw" URL for the image -->
+            <img src="https://raw.githubusercontent.com/MarNami/Sails-and-Spears/main/IMG_5554.jpeg" alt="Blog Post Thumbnail">
+            <div class="thumbnail-title">A Long Journey to Finding the Right Boat!</div>
+        </a>
+    </div>
 
+    <!-- Second Blog post thumbnail link -->
+    <div class="blog-thumbnail">
         <a href="blog-post-2.html">
             <!-- Use the "Raw" URL for the image -->
-            <img src="raw.githubusercontent.com/MarNami/Sails-and-Spears/blob/main/IMG_5441.jpeg" alt="Blog Post Thumbnail 2">
+            <img src="https://raw.githubusercontent.com/MarNami/Sails-and-Spears/main/IMG_5441.jpeg" alt="Blog Post Thumbnail 2">
             <div class="thumbnail-title">Our Boat Purchase Process</div>
         </a>
     </div>
+
     <!-- The rest of your content goes here -->
 
 </body>
+
 </html>
+
 
