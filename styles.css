@@ -48,6 +48,18 @@ h1 {
 p {
     font-size: 36px; /* Adjust the font size as needed */
 }
+/* Add styles for the blog post thumbnail link */
+.blog-thumbnail {
+    display: inline-block; /* Display as a block while maintaining inline flow */
+    margin-right: 20px; /* Adjust the right margin to create space between thumbnails */
+    border: 2px solid #00bfff; /* Blue-green border */
+}
+
+.blog-thumbnail img {
+    width: 300px; /* Adjust the width of the thumbnail */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Add any additional global styles or overrides */
 body {
     margin: 0;
