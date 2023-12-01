@@ -29,17 +29,25 @@
             color: #333; /* Set a color for the text */
             font-family: 'Arial', sans-serif; /* Use a fallback font */
         }
+
+        /* Style for images in the blog content */
+        .blog-image {
+            float: left; /* Float the image to the left */
+            margin: 0 20px 20px 0; /* Add margins to create space around the image */
+            max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+            height: auto; /* Maintain aspect ratio */
+        }
     </style>
-    <title>Blog Post Title</title>
+    <title>Our Boat Selection Journey</title>
 </head>
 
 <body>
 
     <header>
-          <a href="index.html">
+        <!-- Make the "Sails and Spears" heading a link back to the home page -->
+        <a href="index.html">
             <h1>Sails and Spears</h1>
         </a>
-
     </header>
 
     <section class="ocean-section">
@@ -50,8 +58,27 @@
     <!-- Blog post content -->
     <div class="blog-content">
         <h2>Our Boat Selection Journey</h2>
-        <p></p>
-        <p>Feel free to include images, videos, and other media to make your blog post more engaging!</p>
+
+        <!-- First image with text wrapped around -->
+        <img class="blog-image" src="path-to-your-first-image.jpg" alt="Image Description">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et justo ac metus hendrerit luctus. Proin vitae
+            tortor sit amet mi venenatis bibendum. Integer in purus nec ligula aliquet aliquet non a elit. Integer vel
+            libero id metus dapibus congue. Sed nec malesuada velit. Duis non ligula nec elit tristique pharetra ut vel
+            justo. Phasellus sit amet sapien vitae risus venenatis blandit non sed augue.
+        </p>
+
+        <!-- Second image with text wrapped around -->
+        <img class="blog-image" src="path-to-your-second-image.jpg" alt="Another Image Description">
+        <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In aliquet justo ac
+            ligula tincidunt luctus. Sed eu mi in augue posuere blandit. Proin fermentum leo non enim ultrices, at
+            fermentum nisl ultrices. Integer auctor, purus eu tempor volutpat, mauris erat ultricies quam, in gravida
+            erat mi nec dui.
+        </p>
+
+        <!-- More text and images can be added as needed -->
+
     </div>
 
     <!-- The rest of your content goes here -->
@@ -59,3 +86,4 @@
 </body>
 
 </html>
+
