@@ -67,29 +67,31 @@
         }
 
         /* Common styles for tiles */
-        .tile {
-            display: inline-block;
-            width: 300px; /* Adjust the width based on your design */
-            height: auto; /* Allow the height to adjust dynamically based on content */
-            margin: 10px; /* Adjust the margin based on your design */
-            overflow: hidden;
-        }
+      <style>
+    .tile {
+        display: inline-block;
+        width: 300px; /* Adjust the width based on your design */
+        height: 400px; /* Adjust the height based on your design */
+        margin: 10px; /* Adjust the margin based on your design */
+        overflow: hidden;
+    }
 
-        /* YouTube video container within the tile */
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        }
+    /* YouTube video container within the tile */
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* 4:3 aspect ratio */
+    }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
     </style>
     <title>Sails and Spears</title>
 </head>
