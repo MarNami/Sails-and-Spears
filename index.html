@@ -67,30 +67,29 @@
         }
 
         /* Common styles for tiles */
+        .tile {
+            display: inline-block;
+            width: 300px; /* Adjust the width based on your design */
+            height: 400px; /* Adjust the height based on your design */
+            margin: 10px; /* Adjust the margin based on your design */
+            overflow: hidden;
+        }
 
-    /* Common styles for tiles */
-    .tile {
-        display: inline-block;
-        width: 300px; /* Adjust the width based on your design */
-        height: 400px; /* Adjust the height based on your design */
-        margin: 10px; /* Adjust the margin based on your design */
-        overflow: hidden;
-    }
+        /* YouTube video container within the tile */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%; /* Adjust the aspect ratio based on your design */
+            overflow: hidden;
+        }
 
-    /* YouTube video container within the tile */
-    .video-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
         /* Your CSS styles go here */
         body {
@@ -111,9 +110,6 @@
         p {
             color: white;
         }
-    
-    
-  
     </style>
     <title>Sails and Spears</title>
 </head>
@@ -157,8 +153,8 @@
         <div class="video-container">
             <!-- Replace "CVIupgVlER8" with the actual YouTube video ID -->
             <iframe
-                width="560"
-                height="115"
+                width="100%"
+                height="100%"
                 src="https://www.youtube.com/embed/CVIupgVlER8"
                 frameborder="0"
                 allowfullscreen
@@ -171,3 +167,4 @@
 </body>
 
 </html>
+
