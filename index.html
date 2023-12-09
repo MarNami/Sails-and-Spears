@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
     <style>
-        
         /* Add styles specific to the next section if needed */
         .ocean-section {
             background-color: #0077be; /* Ocean blue background color */
@@ -22,8 +21,42 @@
         }
 
         /* Increase font size for the header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            position: relative;
+        }
+
         header h1 {
             font-size: 60px; /* Adjust the font size as needed */
+        }
+
+        #menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        #search-bar {
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
 
         /* Add styles for the blog post thumbnail link */
@@ -111,6 +144,31 @@
         p {
             color: white;
         }
+
+        @media screen and (max-width: 768px) {
+            #menu-icon {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav li {
+                margin: 0;
+                text-align: center;
+            }
+        }
     </style>
     <title>Sails and Spears</title>
 </head>
@@ -123,10 +181,12 @@
     <img class="logo logo-right" src="Sails_and_Spears_Logo_2-removebg-preview.png" alt="Right Logo">
 
     <header>
-        
+        <div id="search-bar">&#128269;</div>
         <h1>Sails and Spears</h1>
+        <div id="menu-icon">&#9776;</div>
     </header>
- <nav>
+
+    <nav>
         <ul>
             <li><a href="Blogs.html">Blogs</a></li>
             <li><a href="Video_Library.html">Video Library</a></li>
@@ -135,6 +195,7 @@
             <li><a href="About.html">About</a></li>
         </ul>
     </nav>
+
     <section class="ocean-section">
         <!-- Content for the ocean blue section goes here -->
         <p>Learn about sailing, spearfishing, and free diving or just vicariously experience misadventures with us!</p>
@@ -171,7 +232,8 @@
             ></iframe>
         </div>
     </div>
- <script>
+
+    <script>
         document.getElementById('menu-icon').addEventListener('click', function () {
             var navList = document.querySelector('nav ul');
             navList.classList.toggle('show');
