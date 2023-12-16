@@ -47,7 +47,7 @@ header {
 
 h1 {
     font-family: 'BronicShadow', sans-serif;
-    font-size: 30vw; /* Dynamic font size */
+    font-size: 5vw; /* Dynamic font size */
     color: white;
     margin: 0;
     text-transform: uppercase;
