@@ -30,6 +30,21 @@ header {
     padding: 20px;
 }
 
+.logo {
+    max-height: 100px;
+    position: absolute;
+}
+
+.logo-left {
+    left: 10px;
+    top: 0;
+}
+
+.logo-right {
+    right: 10px;
+    top: 0;
+}
+
 h1 {
     font-family: 'BronicShadow', sans-serif;
     font-size: 100px;
@@ -48,9 +63,18 @@ h1 {
     font-family: 'RemachineScript', sans-serif;
 }
 
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tile {
+    overflow: hidden;
+}
+
 .blog-thumbnail {
-    display: inline-block;
-    margin: 20px;
     border: 2px solid #00bfff;
 }
 
@@ -66,19 +90,9 @@ h1 {
     text-align: center;
 }
 
-.tile {
-    display: inline-block;
-    width: 300px; /* Adjust for responsive design */
-    height: auto; /* Adjust for maintaining aspect ratio */
-    margin: 10px;
-    overflow: hidden;
-}
-
 .video-container {
     position: relative;
-    width: 100%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
 }
 
 .video-container iframe {
@@ -89,47 +103,23 @@ h1 {
     height: 100%;
 }
 
-/* ... (previous CSS code remains unchanged) ... */
-
-.logo {
-    max-height: 100px;
-}
-
-.logo-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.logo-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/* Responsive design adjustments */
 @media (max-width: 768px) {
     .logo {
         max-height: 50px;
     }
 
-    .blog-thumbnail, .tile {
-        width: 100%; /* Full width on smaller screens */
-    }
-
-    .thumbnail-title {
-        font-size: smaller; /* Smaller font size for titles */
+    header h1 {
+        font-size: 50px;
     }
 }
 
 @media (max-width: 480px) {
     .logo-left, .logo-right {
-        display: none; /* Hide logos on very small screens */
+        display: none;
     }
 
     header h1 {
-        font-size: 24px; /* Smaller header font size */
+        font-size: 24px;
     }
 }
 
-/* ... (rest of the CSS code remains unchanged) ... */
