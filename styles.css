@@ -5,14 +5,6 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-}
-
-h1 {
-    font-family: 'BronicShadow', sans-serif;
-}
-
 @font-face {
     font-family: 'RemachineScript';
     src: url('https://raw.githubusercontent.com/MarNami/Sails-and-Spears/main/RemachineScriptPersonalUseOnly-yZL3.ttf') format('truetype');
@@ -20,7 +12,17 @@ h1 {
     font-style: normal;
 }
 
-/* Add styles specific to the header section */
+body {
+    background-image: url('https://raw.githubusercontent.com/MarNami/Sails-and-Spears/main/noshwwag_old_nautical_map_background_faint_light_colors_stained_3243f577-2e79-437d-84e2-971996f62f65.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
 header {
     background-color: teal;
     border-bottom: 5px solid #4CAF50;
@@ -29,43 +31,99 @@ header {
 }
 
 h1 {
-    font-size: 100px; /* Increase font size */
-    color: #fff;
+    font-family: 'BronicShadow', sans-serif;
+    font-size: 100px;
+    color: white;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-/* Add styles specific to the ocean blue section */
 .ocean-section {
     background-color: #0077be;
     border: 5px solid #00bfff;
     padding: 20px;
     text-align: center;
-    color: #fff;
+    color: white;
     font-family: 'RemachineScript', sans-serif;
 }
 
-p {
-    font-size: 60px;
-}
-
-/* Add styles for the blog post thumbnail link */
 .blog-thumbnail {
     display: inline-block;
-    margin-right: 20px;
+    margin: 20px;
     border: 2px solid #00bfff;
 }
 
 .blog-thumbnail img {
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
-/* Add any additional global styles or overrides */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+.thumbnail-title {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
+
+.tile {
+    display: inline-block;
+    width: 300px; /* Adjust for responsive design */
+    height: auto; /* Adjust for maintaining aspect ratio */
+    margin: 10px;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    max-height: 100px;
+    position: absolute;
+}
+
+.logo-left {
+    left: 10px;
+}
+
+.logo-right {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-height: 50px;
+    }
+
+    .blog-thumbnail, .tile {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .thumbnail-title {
+        font-size: smaller; /* Smaller font size for titles */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-left, .logo-right {
+        display: none; /* Hide logos on very small screens */
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller header font size */
+    }
+}
+
 
